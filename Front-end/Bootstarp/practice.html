@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="practice.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <div class="container">
+    <h2>Personal details</h2>
+    <form action="">
+      <div class="row">
+        <div class="col">
+          <label for="Name">Name</label>
+        </div>
+        <div class="col">
+          <input type="text" name="fname" id="uname" maxlength="10" placeholder="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="Password"> Password</label>
+        </div>
+        <div class="col">
+          <input type="password" maxlength="10" name="npass" id="upass" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="email">Email</label>
+        </div>
+        <div class="col">
+          <input type="email"  maxlength="20" pattern="[a-z0-9]+@[a-z0-9.-]+\.[a-z]{2,4}$" name="email" id="nemail">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="Address">Address</label>
+        </div>
+        <div class="col">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:30px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+          <select name="Country" id="dopdown">
+            <div class="col">
+              <option>Choose the country</option>
+              <option>India</option>
+              <option>Japan</option>
+              <option>UK</option>
+            </div>
+          </select>
+        </div>
+        
+        <div class="row">
+          <label for="Gender">Gender</label>
+          <div class="col">
+          <input type="radio" name="gender"  value="male" id="male"/>Male
+          </div>
+          <div class="col">
+          <input type="radio" name="gender"  value="female" id="female"/>Female
+          </div>
+          <div class="col">
+          <input type="radio" name="gender"  value="other" id="other"/>Others
+          </div>
+          </div>
+          <div class="row">
+            <div class="col">
+            <label>Profile pic</label>
+          </div>
+          <div class="col">
+            <input type="file" multiple accept=".docx">
+          </div>
+          </div>
+        <div class="row">
+          <div class="col">
+            <label for="Single">Single
+              <input class="radio" type="radio" name="" id="">
+            </label>
+          </div>
+          <div class="col">
+            <label for="Married">Married
+              <input class="radio" type="radio" name="" id="">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox"> I agree to these <a href="Terms and conditions.html" target="_blank " >Terms and Conditions</a>.</label>
+        </div>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    background-image: url("/pexels-rafael-cerqueira-4737484.jpg");
+    font-size: 16px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background-attachment: fixed;
+    background-size: cover;
+    color:aliceblue;
+    
+    
+}
+h2 {
+    text-align: center;
+    text-decoration: none;
+    
+}
+form {
+    overflow:scroll;
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid rgb(245, 238, 238);
+    margin: 50px auto 0;
+    border-radius: 5px;
+    color:white;
+    
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: rgb(253, 251, 251);
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid rgb(5, 5, 5);
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color:black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: green;
+    color: black;
+}
+
+input[type="reset"]:hover {
+    background:red;
+    color: black;
+}
+
+input[type="reset"] {
+    font-size: 110%;
+    font-weight: 100;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+  }

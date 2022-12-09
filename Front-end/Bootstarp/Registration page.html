@@ -1,0 +1,190 @@
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Register Form</title>
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<style>
+ 
+body { 
+    
+	 background-image: url("wallpaperflare.com_wallpaper.jpg");
+	 /* background-image: linear-gradient(aqua, rgb(152, 168, 81)); */
+	 background-size: cover;
+	 background-attachment:fixed;
+	 font-family: 'Ebrima';
+	 /* margin:auto;  */
+	 /* padding: 1px;  */
+	 /* width:fit-content;  */
+
+}
+::-webkit-scrollbar {
+  width: 20px;
+  
+}
+#checkbox{
+	color: rgb(161, 112, 20);
+}
+/* ::-webkit-scrollbar-thumb {
+  background: rgb(22, 146, 184); } */
+  
+ .container {
+	/* background-color: rgb(236, 236, 236); */
+	border-radius: 5px;
+	overflow:scroll;
+	/* scrollbar-color: red; */
+	/* scrollbar-color: red yellow; */
+	width: 100%;
+    height: 100%;
+	/* max-width: 100%; */
+}
+.header {
+	
+	padding: 10px;
+}
+
+.header h2 {
+	text-align: center;
+	color: lightblue;
+}
+
+.form {
+	overflow:scroll;
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid rgb(245, 238, 238);
+    margin: 50px auto 0;
+    border-radius: 5px;
+    color:rgb(204, 37, 37);
+}
+
+#form {
+	padding:auto;
+	
+	
+}
+
+#form label {
+	display: inline-block;
+	margin: 2px;
+	color: rgb(250, 0, 0);
+}
+
+#form input {
+	border: 4px;
+	border-radius: 100px;
+	border-color: rgb(134, 12, 12);
+	background-color: transparent;
+	font-family: Ebrima;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid;
+  	padding: 10px;
+  	box-shadow: 5px 1px;
+	
+}
+.home{
+	color: black;
+		font-family: Ebrima;
+		font-size: 24px;
+}
+.form small {
+	color: blue;
+	
+	bottom: 0;
+	left: 0;
+}
+
+ textarea {
+  background-color: transparent;
+  color: #000000;
+}
+.form button {
+	background-color: orange;
+	border: 2px;
+	align-items: center;
+}
+.Marriage{
+	box-shadow: none;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- <div class="container"> -->
+	<div class="header">
+		<h2>Registration Form</h2>
+	</div>
+	<form name="form" id="form" class="form">
+	
+		<legend>Personal details:</legend>
+		<div class="form-control">
+			<label>Name</label>
+			<input type="text" maxlength=10 placeholder="Enter Name" id="name">
+		</div>
+		<div class="form-control">
+			<label>Email</label>
+			<input type="email" placeholder="Enter email" id="email">
+		</div>
+		<div class="form-control">
+			<label>Address</label>
+			<input type="text" placeholder="Enter Address" id="address">
+		</div>
+		<div class="form-control">
+			<label>Phone Number</label>
+			<input type="tel" maxlength="10" id="number" placeholder="Enter the Mobile Number">
+		</div>
+
+	<div class="Marriage">
+			<label for="Gender">Gender</label>
+			<br>
+			<input type="radio" name="gender"  value="male" id="male"/>Male<br>
+    		<input type="radio" name="gender"  value="female" id="female"/>Female<br>
+			<input type="radio" name="gender"  value="other" id="other"/>Others
+    	</div><br>
+ 
+    	<div class="form-control">
+    	<select name="course">
+    				<option>select course</option>
+    				<option value="html">Python</option>
+    				<option value="css">Javascript</option>
+    				<option value="javascript">C++</option>
+                </select>
+         </div>
+         <div class="Marriage">
+			<Label for="Marital Status">Marital Status</Label><br>
+      		<label for="Single">Single</label> 
+      		<input type="radio" name="Marital Status" value="Married">
+			<Label for="Married">Married</Label>
+      		<input type="radio" name="Marital Status" value="Unmarried">
+			</div><br>
+			<!-- <div class="form-control"> -->
+         <!-- <label>Hobbies</label>
+		 
+    			<input type="checkbox" name="hobbies" id="Reading"/>Reading
+    			<input type="checkbox" name="hobbies" id="watching games"/>watching games
+    			<input type="checkbox" name="hobbies" id="Playing cricket"/>Playing cricket
+		</div> -->
+		
+        <div class="g-recaptcha" data-sitekey="6Lc63w4iAAAAAJQsLfaowb4QYocvIjNHf2blJ-pc" data-callback="verifyCaptcha"></div>
+        <div id="g-recaptcha-error"></div>
+       
+		<br>
+		<input type="checkbox">
+		<label for="I agree" id="checkbox"> I agree to all statements in the<a href="Terms and conditions.html" target="_blank">Terms and conditions</a></label>
+		<br>
+		<button class="buttonn" type="button" >Submit</button>
+		
+		</form>
+		</div>
+		</body>
+		<sript>
+			
+		</sript>
+		</html>
