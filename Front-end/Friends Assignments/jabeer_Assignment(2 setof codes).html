@@ -1,0 +1,193 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+form{
+  display:flex;
+  flex-direction:column;
+  width:35vw;
+}
+form input{
+  padding:0.7em 1em;
+}
+form span{
+  padding:0.6em 1em;
+}
+form > button{
+  padding:1.1em;
+  margin:1em 1em;
+  cursor:pointer;
+}
+ul{
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  justify-content:center;
+  width:25vw;
+
+}
+ul li{
+  padding:1em 2em .8em 2em;
+  border:1px solid black;
+
+}
+    </style>
+</head>
+<body>
+    <form action="#" id="formSubmission" method="get">
+        <span>Email</span>
+        <input type="Name" placeholder="enter your Name" id="name">
+        <span>Age</span>
+        <input type="number" placeholder="Age" id="age">
+        <span>State</span>
+        <input type="text" placeholder="Enter State" id="state">
+        <button type="submit">Submit</button>
+      </form>
+     <ul id="data">
+       <li>Name</li>
+       <li>Age</li>
+       <li>State</li>
+     </ul>
+</body>
+<script>
+    let form=document.getElementById("formSubmission");
+
+let table=document.getElementById('data');
+form.addEventListener("submit",(e)=>{
+  e.preventDefault();
+  submit();
+})
+
+
+const submit=()=>{
+  let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+    let state = document.getElementById("state").value;
+
+
+  let newArray = [name,age,state];
+  newArray.forEach((item)=>{
+      var li = document.createElement("li");
+  var text = document.createTextNode(item);
+  li.appendChild(text);
+  table.appendChild(li);
+  })
+  form.reset(); 
+}
+</script>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #tableScore {    
+border: 1px solid black;  
+margin-left: auto;  
+margin-right: auto;  
+border-collapse: collapse;    
+width: 500px;  
+text-align: center;  
+font-size: 20px;  
+}  
+</style>
+<body>
+    <script src="js/script.js"></script>
+    <h1 align="center">Form Validation</h1>
+    <table align="center">
+      <tr>
+        <td>Name:</td>
+        <td><input name="name" id="name" type="text" /></td>
+      </tr>
+  
+      <tr>
+        <td>Password:</td>
+        <td><input name="password" id="password" type="password" /></td>
+      </tr>
+  
+      <td>
+      <button type="submit" onclick="score_table()">Submit</button>
+    </td>
+
+    <div id="divTable">
+      <table id="tableScore" border="2">
+        <th>No</th>
+        <th>Name</th>
+        <th>Password</th>
+      </table>
+  
+  
+    </div>
+</body>
+<script>
+var testScore = {
+  name: "",
+  password: "",
+
+};
+var i = 1;
+
+function score_table() {
+  document.getElementById("divTable").style.display = "block";
+
+  // Gathering the data after submit
+  testScore.name = document.getElementById("name").value;
+  testScore.password = document.getElementById("password").value;
+  
+  document.getElementById("name").value = "";
+  document.getElementById("password").value = "";
+
+  // Insert row
+  var table = document.getElementById("tableScore");
+  var row = table.insertRow(i);
+  var number = row.insertCell(0);
+  var name = row.insertCell(1);
+  var password = row.insertCell(2);
+ 
+
+  number.innerHTML = i;
+  name.innerHTML = testScore.name;
+  password.innerHTML = testScore.password;
+  i++;
+
+}
+
+function showAvg() {
+  document.getElementById("tableScore").querySelector("th:nth-child(6)").style.display = "block";
+
+  var colAvg = document.getElementById("tableScore").querySelectorAll("td:nth-child(6n)");
+  for (var i = 0; i < colAvg.length; i++) {
+    colAvg[i].style.display = "block";
+  }
+}
+
+function showBest() {
+  var colAvg = document.getElementById("tableScore").querySelectorAll("td:nth-child(6n)");
+  var rowAvg = document.getElementById("tableScore").querySelectorAll("tr:nth-child(1n)");
+
+  for (var i = 0; i < colAvg.length; i++) {
+    var avg = parseFloat(colAvg[i].innerText);
+    if (avg >= 8) {
+      rowAvg[i + 1].style.background = "red";
+    } else {}
+  }
+}
+</script>
+</html> 

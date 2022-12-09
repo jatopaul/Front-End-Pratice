@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<style>
+    body{
+        background-image:url("grab-14831031-transformed.jpeg");
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100%;
+        /* opacity: 0.8; */
+      }
+    .form-control{
+      background-color: transparent;
+ 
+    }
+    .card-body{
+      height: auto;
+    }
+    .text-uppercase text{
+      text-decoration: dotted;
+    }
+    .form-label{
+      color: aliceblue;
+    }
+    .form-control{
+      opacity: 0.5;
+    }
+    .form-check-label{
+      color: aliceblue;
+    }
+    .text-uppercase{
+      color: aliceblue;
+      text-decoration: dotted;
+    }
+</style>
+</head>
+<body>
+  <form action="" method="" onsubmit="return verify(this)">
+    <section class="vh-100 bg-image">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row  justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6" style="background-color: transparent";>
+          <div class="card" style="border-radius: 15px; background-color: transparent;"> 
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+              <form>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example1cg">Your Name</label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control" />
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3cg">Your Email</label>
+                  <input type="email" id="form3Example3cg" class="form-control form-control" />
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cg">Password</label>
+                  <input type="password" id="form3Example4cg" class="form-control form-control" />
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                  <input type="password" id="form3Example4cdg" class="form-control form-control" />
+                  
+                </div>
+
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u style="
+                      color: aliceblue">Terms of service</u></a>
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <!-- <input type="submit" value="Submit" required>If we need the html validation in check box use requried -->
+                  <input type="submit" value="Submit"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onsubmit="return verify(this)"/>
+                    <input type=button onClick="location.href='test.html'" value='Cancel'>
+                </div>
+                
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="Mani_Assignment.html"
+                    class="fw-bold text-body"><u>Login here</u></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</form>
+</body>
+<script>
+
+function verify(Form)
+    {
+        var Checkbox = Form.elements;
+        if (Checkbox.checked)
+        {
+            var OK = prompt('All information entered is accurate.Thank you.');
+            if (!OK)
+                return (Checkbox.checked = false);
+        }
+        else
+        {
+            alert('Please check the "agreement" box to continue.');
+            Form.elements.focus();
+            return false;
+        }
+    }
+    
+  </script>
+</html>
+</body>
+</html>

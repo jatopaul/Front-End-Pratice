@@ -1,0 +1,11 @@
+let Name="Raja Hari"; 
+console.log(Name.slice(1,3)); 
+console.log(Name.toUpperCase()); 
+console.log(Name.toLowerCase());
+console.log(Name.indexOf("R")); 
+console.log(Name.lastIndexOf("i")); 
+console.log(Name.concat("")); 
+console.log(Name.split(" "));
+console.log(Name.startsWith("R")); 
+console.log(Name.substr(2,6)); 
+console.log(Name.substring(3,6));
