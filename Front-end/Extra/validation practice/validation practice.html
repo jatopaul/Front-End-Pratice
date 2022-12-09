@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="validationpratice.css">
+</head>
+<body>
+<form name="myForm" id="nform" action="" onsubmit=" validateForm()" method="">
+    <div id="example1">
+      <fieldset class="fieldset">
+        <legend >Personal details:</legend>
+        <div class="form-control">
+          <label for="Name">Name</label>
+          <input type="text" name="fname" id="uname" maxlength="10">
+          </div>
+          <div class="form-control">
+          <label for="Password"> Password</label>
+          </div>
+          <div class="form-control">
+          <input type="password" maxlength="10" name="npass" id="upass" >
+          </div>
+          <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email"  maxlength="20" name="email" id="nemail">
+          </div>
+          <div class="form-control">
+          <label for="Address">Address</label>
+          <input type="text" maxlength="20" name="fname" id="uaddress">
+          </div>
+        
+      <div class="form-control">
+        
+      <select name="Country" id="dopdown">
+      <option>Choose the country</option>
+      <option>India</option>
+      <option>Japan</option>
+      <option>UK</option>
+      </select><br>
+      </div>
+      <div class="form-control">
+      <label>Profile pic</label>
+      <input type="file">
+      </div>
+      
+      <div class="form-check">
+        <label for="Single">
+          Single<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="Married">
+          Married<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        </label>
+      </div>
+        <div class="tacbox">
+          <input id="checkbox" type="checkbox" />
+          <label for="checkbox"> I agree to these <a href="Terms and conditions.html">Terms and Conditions</a>.</label>
+        </div>
+      <input type="submit" value="Submit" id="submit">
+    
+  </fieldset>
+</div>
+</form>
+<script src="validationpratice.js"></script>
+</body>
+</html> 
