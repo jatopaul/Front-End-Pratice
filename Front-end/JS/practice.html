@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="myFun()">clickMe</button>
+    <button onclick="myFu()">clickMe</button>
+
+    <a href="javascript: history.go(-1)">Go Back</a>
+<div id="demo"></div>
+<div id="demo1"></div>
+<div id="demo2"></div>
+<div id="demo3"></div> -->
+<p  id="demo"></p>
+<label for="fname">My Name</label>
+<input type="text" name="name" id="fname" placeholder="enter the name">
+<button onclick="Submit()">Submit</button>
+</body>
+<!-- --------------------------------------------------------------------------------------------------------- -->
+<script>
+
+    function Submit(){
+        let namee=document.getElementById("fname").value;
+        if(namee == "" )
+        {
+            document.getElementById("fname").focus();
+            alert("name is required");
+            // return false;
+        }
+        else
+        {
+            alert("name is ............");
+        }
+    }
+
+
+
+
+    // if(password ==""){
+    //     alert("password is required");
+    // }
+    
+    // function myFun(){
+    //     alert("hii")                //alertfunction//
+    // }
+    // function myFu(){
+    //     window.open("https://www.w3schools.com/") //opening new window//
+    // }
+// ---------------------------------------------------------------------------------------------------------
+// some string methods using the id 
+//     let k = 100 
+//     let y=100
+//     let c=k+y;
+//     let e =10;
+    
+// document.getElementById("demo").innerHTML = c;
+
+// document.getElementById("demo1").innerHTML = e**10;
+
+
+// let x =16+"qwerty";
+// document.getElementById("demo2").innerHTML = x;
+
+
+
+// let a = 5;
+// let b = 5;                                                          //boolean (true/false)
+// let d = 6;
+// let s= a+b+d;
+// console.log(s)
+
+// document.getElementById("demo3").innerHTML =(a == b) + "<br>" + (a == d);
+
+
+// -------------------------------------------------------------------------------------------------------------------
+// typeof
+
+// let num=10
+// console.log(typeof(num))
+//                                 //can't delcare the the varibable in same variable name
+// let num=10
+// console.log(typeof(num))
+
+
+// var num=100
+// console.log(typeof(num))
+//                                     //By using var delcartion it is ok to use again
+// var num=10
+// console.log(typeof("num"))
+
+// var str="happy"
+// console.log(typeof(str))
+
+// console.log(typeof(qwerty))             //undefined because it doesn't have declared the value
+
+// console.log(typeof(null))               // value is object
+
+// -------------------------------------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------------------------------------
+
+// function ReverseString(str) {
+
+// 	// Check input
+// 	// if(!str || str.length < 2 ||
+// 	// 		typeof str!== 'string') {
+// 	// 	return 'Not valid';
+// 	// }
+	
+// 	// Take empty array revArray
+// 	const revArray = [];
+// 	const length = str.length - 1;
+	
+// 	// Looping from the end
+// 	for(let i = length; i >= 0; i--) {
+// 		revArray.push(str[i]);
+// 	}
+	
+// 	// Joining the array elements
+// 	return revArray.join('');
+// }
+
+// console.log((ReverseString("111222@@SXC ")));
+
+
+
+</script>
+</html>

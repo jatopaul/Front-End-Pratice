@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+h2{
+    color: #f6ffd9;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+.wrap-banner{
+     display:flex;
+    justify-content:center;
+    align-items:center;
+    height:14em;
+    max-width: 100em;
+    background:url("123.jpeg");
+        background-size:cover;
+     background-position:center;
+}
+
+
+body { 
+	height: 100%;
+	background-color: #333; 
+	color: whitesmoke; 
+	font-size: 16px; 
+	font-family: 'Lato';
+} 
+h1 { font-size: 32px; }
+h2 { font-size: 26px; }
+h3 { font-size: 18px; }
+p { margin: 0 0 15px; line-height: 24px; color: gainsboro; }
+a { color: dodgerblue; text-decoration: none; border-bottom: 1px dotted; }
+a:hover { color: tomato; }
+
+.container { 
+	max-width: 960px; 
+	height: 100%;
+	margin: 0 auto; 
+	padding: 20px;
+}
+
+.tabs {
+	position: relative;
+	display: flex;                  
+	min-height: 300px;
+	border-radius: 8px 8px 0 0;
+	overflow:visible;
+}
+
+.tabby-tab {
+	flex: 1;
+}
+
+
+/* This css used for the tabs(labels) */
+.tabby-tab label {
+	display: block;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* hovering in tabs  */
+.tabby-tab label:hover {
+	background: #09388f;
+    border-radius: 40px;
+    
+}
+
+/* css for the Contents  */
+.tabby-content {
+	position: absolute;
+	left: 0; bottom: 0; right: 0;
+	top: 40px; 
+	padding: 20px;
+	border-radius: 0 0 8px 8px;
+	background: #209fd1;
+    border-radius: 20px;
+	transition: 
+		opacity 0.8s ease,
+		transform 0.8s ease		;
+	
+	/* show/hide */
+		opacity: 0;
+		transform: scale(0.1);
+		transform-origin: top left;
+	
+}
+
+.tabby-content img {
+	float: left;
+	margin-right: 20px;
+	border-radius: 8px;
+    height: 200px;;
+}
+
+
+/* this is for the tab radio button */
+
+.tabby-tab [type=radio] { display: none; }
+[type=radio]:checked ~ label {
+	background: #326e85;
+	z-index: 2;
+    border-radius: 20px;;
+}
+
+/* this is foe the content and img  */
+[type=radio]:checked ~ label ~ .tabby-content {
+	z-index: 1;
+	
+		opacity: 1;
+		transform: scale(1);
+}
+
+
+</style>
+</head>
+<body>
+    <section class="wrap-banner">
+        <div> 
+         <h2> GAMES</h2>
+         </div>
+       </section>
+       <div class="container">
+	
+       
+    
+        <div class="tabs">
+            <div class="tabby-tab">
+                <input type="radio" id="tab-1" name="tabby-tabs" checked>
+                <label for="tab-1">Assasin</label>
+                <div class="tabby-content">
+                    <img src="download.jfif">
+                    <p>Purr while eating meowing non stop for food or chase laser sleep on dog bed, force dog to sleep on floor, so play riveting piece on synthesizer keyboard hiss at vacuum cleaner. Stares at human while pushing stuff off a table spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce so refuse to leave cardboard box.</p>
+                </div>
+            </div>
+    
+            <div class="tabby-tab">
+                <input type="radio" id="tab-2" name="tabby-tabs">
+                <label for="tab-2">Piratesof caribean</label>
+                <div class="tabby-content">
+                    <img src="MV5BMjA4MDIzNjM3N15BMl5BanBnXkFtZTcwMjI0MzI3NA@@._V1_.jpg">
+                    <p> a member of a Shia Muslim sect who at the time of the Crusades was sent out on a suicidal mission to murder prominent enemies. 2 : a person who commits murder especially : one who murders a politically important person either for money or from fanatical adherence to a cause. </div>
+            </div>
+    
+            <div class="tabby-tab">
+                <input type="radio" id="tab-3" name="tabby-tabs">
+                <label for="tab-3">Tom and Jerry</label>
+                <div class="tabby-content">
+                        <img src="MV5BMTQ3ZGIzNjMtYWJhMC00MDRhLTgyYWItMjBjNzM0MTIzM2JlXkEyXkFqcGdeQWRvb2xpbmhk._V1_.jpg">
+                        <p>Throwup on your pillow wake up human for food at 4am and hide when guests come over, yet inspect anything brought into the house.</p>
+                </div>
+            </div>
+    
+            <div class="tabby-tab">
+                <input type="radio" id="tab-4" name="tabby-tabs">
+                <label for="tab-4">Warcraft</label>
+                <div class="tabby-content">
+                    <img src="download (1).jfif">
+                    <p>Warcraft (alternatively known as Warcraft: The Beginning)[4] is a 2016 action fantasy film based on the video game series and franchise of the same name. Directed by Duncan Jones and written by Charles Leavitt and Jones, it stars Travis Fimmel, Paula Patton, Ben Foster, Dominic Cooper, Toby Kebbell, Ben Schnetzer, Robert Kazinsky, and Daniel Wu. The film follows Anduin Lothar of Stormwind and Durotan of the Frostwolf clan as heroes set on opposite sides of a growing war, as the warlock Gul'dan leads the Horde to invade Azeroth using a magic portal. Together, a few human heroes and dissenting Orcs must attempt to stop the true evil behind this war and restore peace.
+                </div>
+            </div>
+            
+        </div>   
+</body>
+</html> 
